@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity"
+    android:id="@+id/parent"
+    android:layout_margin="25dp"
+    app:cardCornerRadius="30dp"
+    app:cardElevation="50dp"
+    android:background="@color/light_grayish_cyan">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/account"
+            android:background="@drawable/cycle"
+            android:id="@+id/account"
+            android:layout_marginStart="20dp"
+            android:elevation="20dp"
+            />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/account"
+            android:id="@+id/relName"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="lorem ipsum"
+                android:textSize="20sp"
+                android:layout_margin="15dp"
+                android:fontFamily="@font/spartan_semibold"
+                android:id="@+id/company"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/company"
+                android:text="lorem"
+                android:textSize="12sp"
+                android:padding="10dp"
+                android:background="@drawable/recentbg"
+                android:id="@+id/recent"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/spartan_extrabold"
+                android:textColor="@color/white"
+                android:layout_centerInParent="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="lorem"
+                android:id="@+id/ads"
+                android:textSize="12sp"
+                android:layout_toEndOf="@id/recent"
+                android:padding="10dp"
+                android:background="@drawable/adsbg"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/spartan_extrabold"
+                android:textColor="@color/white"
+                android:layout_centerInParent="true"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Developer"
+            android:textSize="30sp"
+            android:id="@+id/job"
+            android:fontFamily="@font/spartan_bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="lorem"
+                android:id="@+id/fulltime"
+                android:layout_margin="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="lorem"
+                android:id="@+id/hour"
+                android:layout_margin="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="lorem"
+                android:id="@+id/country"
+                android:layout_margin="15dp"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:src="@color/dark_grayish_cyan"
+            android:layout_margin="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="lorem"
+                android:id="@+id/qual1"
+                android:background="@drawable/qualification_bg"
+                android:textSize="16sp"
+                android:fontFamily="@font/spartan_bold"
+                android:layout_margin="15dp"
+                android:elevation="50dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="lorem"
+                android:id="@+id/qual2"
+                android:background="@drawable/qualification_bg"
+                android:textSize="16sp"
+                android:fontFamily="@font/spartan_bold"
+                android:layout_margin="15dp"
+                android:elevation="50dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="lorem"
+                android:background="@drawable/qualification_bg"
+                android:textSize="16sp"
+                android:id="@+id/qual3"
+                android:fontFamily="@font/spartan_bold"
+                android:layout_margin="15dp"
+                android:elevation="50dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="lorem"
+                android:id="@+id/qual4"
+                android:background="@drawable/qualification_bg"
+                android:textSize="16sp"
+                android:fontFamily="@font/spartan_bold"
+                android:layout_margin="15dp"
+                android:elevation="50dp"/>
+
+        </LinearLayout><LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="lorem"
+                android:id="@+id/qual6"
+                android:background="@drawable/qualification_bg"
+                android:textSize="16sp"
+                android:fontFamily="@font/spartan_bold"
+                android:layout_margin="15dp"
+                android:elevation="50dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="lorem"
+                android:id="@+id/qual5"
+                android:background="@drawable/qualification_bg"
+                android:textSize="16sp"
+                android:fontFamily="@font/spartan_bold"
+                android:layout_margin="15dp"
+                android:elevation="50dp"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -30,11 +30,11 @@ public class MainActivity extends AppCompatActivity {
         ArrayList<Job> job = new ArrayList<>();
         job.add(new Job(R.drawable.account, "Account", "New", "Featured" , "Software Developer", "FullTime", "1day", "Indonesia",
                 "Fullstack", "Java", "Ruby", "Website"));
-        job.add(new Job(R.drawable.eyecam_co, "Eyecam", "", "", "Graphic Designer", "PartTime",
+        job.add(new Job(R.drawable.eyecam_co, "Eyecam", null, null, "Graphic Designer", "PartTime",
                 "1-4 Hours", "Singapore", "Figma"));
 
         JobAdapter adapter = new JobAdapter(this);
-        adapter.;
+        adapter.setJobs(job);
 
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void initView() {
-        deltaRelative = findViewById(R.id.deltaRelative);
+        deltaRelative = findViewById(R.id.Relative);
         recyclerView = findViewById(R.id.recycleView);
         mainCard = findViewById(R.id.mainCard);
 

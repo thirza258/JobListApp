@@ -57,7 +57,8 @@
                 android:layout_marginStart="20dp"
                 android:fontFamily="@font/spartan_extrabold"
                 android:textColor="@color/white"
-                android:layout_centerInParent="true"/>
+                android:layout_centerInParent="true"
+                android:textAllCaps="true"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -72,6 +73,7 @@
                 android:fontFamily="@font/spartan_extrabold"
                 android:textColor="@color/white"
                 android:layout_centerInParent="true"
+                android:textAllCaps="true"
                 />
         </RelativeLayout>
 
@@ -124,77 +126,87 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="lorem"
-                android:id="@+id/qual1"
-                android:background="@drawable/qualification_bg"
-                android:textSize="16sp"
-                android:fontFamily="@font/spartan_bold"
-                android:layout_margin="15dp"
-                android:elevation="50dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="lorem"
+                    android:id="@+id/qual1"
+                    android:background="@drawable/qualification_bg"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/spartan_bold"
+                    android:layout_margin="15dp"
+                    android:elevation="50dp"
+                    android:padding="10dp"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="lorem"
-                android:id="@+id/qual2"
-                android:background="@drawable/qualification_bg"
-                android:textSize="16sp"
-                android:fontFamily="@font/spartan_bold"
-                android:layout_margin="15dp"
-                android:elevation="50dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="lorem"
+                    android:id="@+id/qual2"
+                    android:background="@drawable/qualification_bg"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/spartan_bold"
+                    android:layout_margin="15dp"
+                    android:elevation="50dp"
+                    android:padding="10dp"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="lorem"
-                android:background="@drawable/qualification_bg"
-                android:textSize="16sp"
-                android:id="@+id/qual3"
-                android:fontFamily="@font/spartan_bold"
-                android:layout_margin="15dp"
-                android:elevation="50dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="lorem"
+                    android:background="@drawable/qualification_bg"
+                    android:textSize="16sp"
+                    android:id="@+id/qual3"
+                    android:fontFamily="@font/spartan_bold"
+                    android:layout_margin="15dp"
+                    android:elevation="50dp"
+                    android:padding="10dp"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="lorem"
-                android:id="@+id/qual4"
-                android:background="@drawable/qualification_bg"
-                android:textSize="16sp"
-                android:fontFamily="@font/spartan_bold"
-                android:layout_margin="15dp"
-                android:elevation="50dp"/>
 
-        </LinearLayout><LinearLayout
+
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="lorem"
-                android:id="@+id/qual6"
-                android:background="@drawable/qualification_bg"
-                android:textSize="16sp"
-                android:fontFamily="@font/spartan_bold"
-                android:layout_margin="15dp"
-                android:elevation="50dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="lorem"
+                    android:id="@+id/qual4"
+                    android:background="@drawable/qualification_bg"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/spartan_bold"
+                    android:layout_margin="15dp"
+                    android:elevation="50dp"
+                    android:padding="10dp"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="lorem"
-                android:id="@+id/qual5"
-                android:background="@drawable/qualification_bg"
-                android:textSize="16sp"
-                android:fontFamily="@font/spartan_bold"
-                android:layout_margin="15dp"
-                android:elevation="50dp"/>
 
+                <TextView
+                    android:id="@+id/qual6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/qualification_bg"
+                    android:elevation="50dp"
+                    android:fontFamily="@font/spartan_bold"
+                    android:padding="10dp"
+                    android:text="lorem"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/qual5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/qualification_bg"
+                    android:elevation="50dp"
+                    android:fontFamily="@font/spartan_bold"
+                    android:padding="10dp"
+                    android:text="lorem"
+                    android:textSize="16sp" />
 
         </LinearLayout>
 

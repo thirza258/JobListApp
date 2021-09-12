@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.jetbrains.annotations.NotNull;
 
@@ -39,12 +40,38 @@ public class JobAdapter extends RecyclerView.Adapter<JobAdapter.ViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull @NotNull JobAdapter.ViewHolder holder, int position) {
+        holder.account.setImageResource(jobs.get(position).getCompanyLogo());
+        holder.company.setText(jobs.get(position).getCompany());
+        holder.recent.setText(jobs.get(position).getRecent());
+        holder.ads.setText(jobs.get(position).getAds());
+        holder.job.setText(jobs.get(position).getJobName());
+        holder.country.setText(jobs.get(position).getCountry());
+        holder.hour.setText(jobs.get(position).getTime());
+        holder.fulltime.setText(jobs.get(position).getFull());
+        holder.qual1.setText(jobs.get(position).getQual1());
+        holder.qual2.setText(jobs.get(position).getQual2());
+        holder.qual3.setText(jobs.get(position).getQual3());
+        holder.qual4.setText(jobs.get(position).getQual4());
+        holder.qual5.setText(jobs.get(position).getQual5());
+        holder.qual6.setText(jobs.get(position).getQual6());
+        holder.parent.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(context, "Selected", Toast.LENGTH_SHORT).show();
+            }
+        });
 
     }
+
 
     @Override
     public int getItemCount() {
         return jobs.size();
+    }
+
+    public void setJobs(ArrayList<Job> jobs) {
+        this.jobs = jobs;
+        notifyDataSetChanged();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {

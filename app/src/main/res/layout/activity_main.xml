@@ -7,50 +7,46 @@
     tools:context=".MainActivity"
     android:background="@color/light_grayish_cyan">
 
-    <RelativeLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/deltaRelative">
+        android:layout_height="match_parent">
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:src="@drawable/bg_header_mobile"
-            android:background="@color/desaturated_dark_cyan"
-            android:scaleType="fitXY"
-            android:id="@+id/header"/>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="124dp"
-            android:layout_marginTop="100dp"
-            android:layout_centerHorizontal="true"
-            android:layout_marginStart="40dp"
-            app:cardCornerRadius="20dp"
-            android:id="@+id/mainCard"
-            android:elevation="50dp"
-            android:outlineAmbientShadowColor="@color/black">
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="job"
-                android:layout_margin="20dp"/>
-
-        </androidx.cardview.widget.CardView>
-
-        <androidx.recyclerview.widget.RecyclerView
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/recycleView"
-            android:layout_below="@id/header"
-            android:layout_marginTop="100dp"/>
+            android:id="@+id/Relative">
 
-    </RelativeLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/bg_header_mobile"
+                android:background="@color/desaturated_dark_cyan"
+                android:scaleType="fitXY"
+                android:id="@+id/header"/>
 
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="124dp"
+                android:layout_marginTop="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="40dp"
+                app:cardCornerRadius="20dp"
+                android:id="@+id/mainCard"
+                android:elevation="50dp"
+                android:outlineAmbientShadowColor="@color/black">
 
+            </androidx.cardview.widget.CardView>
 
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/recycleView"
+                android:layout_below="@id/header"
+                android:layout_marginTop="50dp"/>
 
+        </RelativeLayout>
+
+    </ScrollView>
 
 
 

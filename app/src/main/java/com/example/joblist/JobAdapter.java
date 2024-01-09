@@ -42,18 +42,57 @@ public class JobAdapter extends RecyclerView.Adapter<JobAdapter.ViewHolder> {
     public void onBindViewHolder(@NonNull @NotNull JobAdapter.ViewHolder holder, int position) {
         holder.account.setImageResource(jobs.get(position).getCompanyLogo());
         holder.company.setText(jobs.get(position).getCompany());
+        if(jobs.get(position).getCompany() == null){
+            holder.company.setVisibility(View.GONE);
+        }
         holder.recent.setText(jobs.get(position).getRecent());
+        if(jobs.get(position).getRecent() == null){
+            holder.recent.setVisibility(View.GONE);
+        }
         holder.ads.setText(jobs.get(position).getAds());
+        if(jobs.get(position).getAds() == null){
+            holder.ads.setVisibility(View.GONE);
+        }
         holder.job.setText(jobs.get(position).getJobName());
+        if(jobs.get(position).getJobName() == null){
+            holder.job.setVisibility(View.GONE);
+        }
         holder.country.setText(jobs.get(position).getCountry());
+        if(jobs.get(position).getCountry() == null){
+            holder.country.setVisibility(View.GONE);
+        }
         holder.hour.setText(jobs.get(position).getTime());
+        if(jobs.get(position).getTime() == null){
+            holder.hour.setVisibility(View.GONE);
+        }
         holder.fulltime.setText(jobs.get(position).getFull());
+        if(jobs.get(position).getFull() == null){
+            holder.fulltime.setVisibility(View.GONE);
+        }
         holder.qual1.setText(jobs.get(position).getQual1());
+        if(jobs.get(position).getQual1() == null){
+            holder.qual1.setVisibility(View.GONE);
+        }
         holder.qual2.setText(jobs.get(position).getQual2());
+        if(jobs.get(position).getQual2() == null){
+            holder.qual2.setVisibility(View.GONE);
+        }
         holder.qual3.setText(jobs.get(position).getQual3());
+        if(jobs.get(position).getQual3() == null){
+            holder.qual3.setVisibility(View.GONE);
+        }
         holder.qual4.setText(jobs.get(position).getQual4());
+        if(jobs.get(position).getQual4() == null){
+            holder.qual4.setVisibility(View.GONE);
+        }
         holder.qual5.setText(jobs.get(position).getQual5());
+        if(jobs.get(position).getQual5() == null){
+            holder.qual5.setVisibility(View.GONE);
+        }
         holder.qual6.setText(jobs.get(position).getQual6());
+        if(jobs.get(position).getQual6() == null){
+            holder.qual6.setVisibility(View.GONE);
+        }
         holder.parent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

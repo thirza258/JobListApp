@@ -27,7 +27,7 @@ class JobList(APIView):
 
             json_data = json.dumps(response_data)
 
-            with open('app/src/main/assets/data.json', 'w') as json_file:
+            with open('app/src/main/res/raw/data.json', 'w') as json_file:
                 json_file.write(json_data)
 
             return Response(response_data, status=status.HTTP_200_OK)

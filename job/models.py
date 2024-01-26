@@ -40,7 +40,7 @@ class Job(models.Model):
         super(Job, self).save(*args, **kwargs)
 
     def __str__(self):
-        return self.job_title
+        return self.company_name
 
 class Requirement(models.Model):
     job = models.ForeignKey(Job, on_delete=models.CASCADE)

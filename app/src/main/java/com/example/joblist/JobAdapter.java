@@ -14,20 +14,22 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.joblist.serialize.Datum;
+
 import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class JobAdapter extends RecyclerView.Adapter<JobAdapter.ViewHolder> {
 
     ArrayList<Job> jobs = new ArrayList<>();
-
+    List<Datum> job;
     private Context context;
 
     public JobAdapter(Context context) {
         this.context = context;
     }
-
 
     @NonNull
     @NotNull
@@ -108,8 +110,8 @@ public class JobAdapter extends RecyclerView.Adapter<JobAdapter.ViewHolder> {
         return jobs.size();
     }
 
-    public void setJobs(ArrayList<Job> jobs) {
-        this.jobs = jobs;
+    public void setJobs(List<Datum> jobs) {
+        this.job = jobs;
         notifyDataSetChanged();
     }
 

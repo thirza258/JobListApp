@@ -44,10 +44,16 @@ public class MainActivity extends AppCompatActivity {
                 Log.d("TAG", response.code() + "");
                 Response response1 = response.body();
 
-                ArrayList<Datum> data = (ArrayList<Datum>) response1.getData();
+                List<Datum> data =  response1.getData();
 
                 JobAdapter adapter = new JobAdapter(MainActivity.this);
                 adapter.setJobs(data);
+
+                Log.d("TAG", data.get(0).getCompanyName());
+
+
+                recyclerView.setLayoutManager(new LinearLayoutManager(MainActivity.this));
+                recyclerView.setAdapter(adapter);
 
             }
 

@@ -17,13 +17,14 @@
         android:orientation="vertical">
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
             android:src="@drawable/account"
             android:background="@drawable/cycle"
             android:id="@+id/account"
             android:layout_marginStart="20dp"
             android:elevation="20dp"
+
             />
 
 
@@ -45,35 +46,34 @@
                 />
 
             <TextView
+                android:id="@+id/recent"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_toEndOf="@id/company"
-                android:text="lorem"
-                android:textSize="12sp"
-                android:padding="10dp"
-                android:background="@drawable/recentbg"
-                android:id="@+id/recent"
-                android:layout_marginStart="20dp"
-                android:fontFamily="@font/spartan_extrabold"
-                android:textColor="@color/white"
                 android:layout_centerInParent="true"
-                android:textAllCaps="true"/>
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@id/company"
+                android:background="@drawable/recentbg"
+                android:fontFamily="@font/spartan_extrabold"
+                android:padding="10dp"
+                android:text="lorem"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
 
             <TextView
+                android:id="@+id/ads"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="lorem"
-                android:id="@+id/ads"
-                android:textSize="12sp"
-                android:layout_toEndOf="@id/recent"
-                android:padding="10dp"
-                android:background="@drawable/adsbg"
-                android:layout_marginStart="10dp"
-                android:fontFamily="@font/spartan_extrabold"
-                android:textColor="@color/white"
                 android:layout_centerInParent="true"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/recent"
+                android:background="@drawable/adsbg"
+                android:fontFamily="@font/spartan_extrabold"
+                android:padding="10dp"
+                android:text="lorem"
                 android:textAllCaps="true"
-                />
+                android:textColor="@color/white"
+                android:textSize="12sp" />
         </RelativeLayout>
 
         <TextView
